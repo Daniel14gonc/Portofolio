@@ -1,0 +1,108 @@
+.About {
+    width: 100vw;
+    height: 100vh;
+    background-color: #BAD9C8;
+    display: flex;
+    z-index: 1010;
+}
+
+
+@media (max-width: 500px) {
+    .About {
+        width: 100vw;
+        height: 100vh;
+        background-color: #BAD9C8;
+        display: flex;
+        z-index: 1010;
+        padding-top: 30px;
+    }
+}
+
+
+.first-about, .second-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.first-about {
+    flex-grow: 1.5;
+    display: flex;
+    flex-direction: column;
+    animation: inUp 1s;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.second-about {
+    flex-direction: column;
+    animation: inUp 1s;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/roboto-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.image {
+    background-image: url(/assets/images/daniel.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    z-index: 1010;
+    background-position: center;
+    animation: inUp 1s;
+}
+
+.one, .two, .tone, .ttwo {
+    transition: 100ms ease;
+}
+
+.me {
+    font-family: Roboto;
+    font-size: 30px;
+    max-width: 600px;
+    color: #025373;
+}
+
+.description {
+    font-size: 20px;
+    max-width: 600px;
+    color: #025373;
+}
+
+/*.anim1 {
+    animation: inUp 1s;
+}
+
+.anim2 {
+    animation: inUp 1s;
+}*/
+
+.hover {
+    font-family: Sudo;
+    margin-bottom: 5px;
+    color: #2F48A3;
+    font-size: 1.2em;
+    animation: inUp 1s;
+}
+
+@keyframes inLeft {
+    from { transform: translate(-100px, 0px) }
+    to { transform: translate(0px, 0px) }
+}
+
+@keyframes inRight {
+    from { transform: translate(100px, 0px) }
+    to { transform: translate(0px, 0px) }
+}
+
+@keyframes inUp {
+    from { transform: translate(0px, 100px) }
+    to { transform: translate(0px, 0px) }
+}

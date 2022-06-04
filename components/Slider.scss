@@ -1,0 +1,111 @@
+.slider {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+
+.arrow-left {
+    background-image: url(../assets/SVG/arrow.svg);
+    background-size: contain;
+    height: 70px;
+    width: 50px;
+    background-repeat: no-repeat;
+    z-index: 1005;
+    justify-self: flex-end;
+    border: 0;
+    background-color: transparent;
+    transition: 500ms ease;
+    margin-left: 20px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    filter: invert(100%) sepia(0%) saturate(5429%) hue-rotate(287deg) brightness(126%) contrast(107%);
+}
+
+.arrow-right {
+    background-image: url(../assets/SVG/arrow.svg);
+    background-size: contain;
+    height: 70px;
+    width: 50px;
+    background-repeat: no-repeat;
+    z-index: 1005;
+    justify-self: flex-end;
+    border: 0;
+    margin-right: 20px;
+    background-color: transparent;
+    transition: 500ms ease;
+    cursor: pointer;
+    transform: rotate(270deg);
+    filter: invert(100%) sepia(0%) saturate(5429%) hue-rotate(287deg) brightness(126%) contrast(107%);
+}
+
+.left, .right {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1001;
+}
+
+.divisor {
+    flex-grow: 5;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.dynamic {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: scroll;
+    position: absolute;
+    display: flex;
+}
+
+body {
+    overflow-x: hidden;
+    width: 90vw;
+}
+
+.dynamic > div {
+    flex-grow: 100vw;
+    display: flex;
+    flex-direction: row;
+    transition: 500ms ease;
+    height: 100%;
+    z-index: 1000;
+}
+
+@media (max-width: 500px) {
+    .arrow-left {
+        background-image: url(../assets/SVG/arrow.svg);
+        background-size: contain;
+        height: 40px;
+        width: 30px;
+        background-repeat: no-repeat;
+        z-index: 1005;
+        justify-self: flex-end;
+        border: 0;
+        background-color: transparent;
+        transition: 500ms ease;
+        cursor: pointer;
+        transform: rotate(90deg);
+    }
+
+    .arrow-right {
+        background-image: url(../assets/SVG/arrow.svg);
+        background-size: contain;
+        height: 40px;
+        width: 30px;
+        background-repeat: no-repeat;
+        z-index: 1005;
+        justify-self: flex-end;
+        border: 0;
+        background-color: transparent;
+        transition: 500ms ease;
+        cursor: pointer;
+        transform: rotate(270deg);
+    }
+}

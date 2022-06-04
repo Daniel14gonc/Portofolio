@@ -1,0 +1,149 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a5/Tsunami_by_hokusai_19th_century.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cont {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000ac;
+}
+
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Sporting';
+  src: url('../assets/fonts/Sporting_Grotesque-Bold_web.woff2') format('woff2');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Sudo';
+  src: url('../assets/fonts/Sudo-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cursor {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: 50ms;
+}
+
+.t1 {
+  animation: up2 300ms steps(50, end);
+  transition: 2ms ease;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.special-text {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Sporting', cursive;
+  font-weight: 700;
+  /*text-shadow: 5px 5px 0px #f7685b;*/
+  overflow: hidden;
+  animation: 
+    typing 600ms steps(50, end);
+}
+
+@media (max-width: 500px) {
+  .special-text {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 300px;
+    padding: 10px;
+    color: white;
+    font-family: 'Sporting', cursive;
+    font-weight: 700;
+    /*text-shadow: 5px 5px 0px #f7685b;*/
+    overflow: hidden;
+    animation: 
+      typing 600ms steps(50, end);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.arrow-down {
+  background-image: url(../assets/SVG/arrow.svg);
+  background-size: contain;
+  height: 70px;
+  width: 50px;
+  background-repeat: no-repeat;
+  z-index: 1005;
+  justify-self: flex-end;
+  border: 0;
+  background-color: transparent;
+  transition: 500ms ease;
+  cursor: pointer;
+  animation: up 600ms steps(50, end);
+  filter: invert(100%) sepia(0%) saturate(5429%) hue-rotate(287deg) brightness(126%) contrast(107%);
+}
+
+.arrow-down:hover {
+  transform: translateY(-10px);
+}
+
+@keyframes typing {
+  from { transform: translate(0px,100px) }
+  to { transform: translate(0px, 0px) }
+}
+
+@keyframes up {
+  from { transform: translate(0px, 50px); }
+  to { transform: translate(0px, 0px); }
+}
+
+@keyframes up2 {
+  from { transform: translate(0px, 10px); }
+  to { transform: translate(0px, 0px); }
+}
+
