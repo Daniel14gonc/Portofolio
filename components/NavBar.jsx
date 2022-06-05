@@ -13,7 +13,7 @@ const NavBar = ({ mouse }) => {
         <h1 onClick={() => handleClick('.About')} style={{fontSize : `${innerWidth > 400 ? '23px' : '15px'}`}}>About me</h1>
         <h1 onClick={() => handleClick('.Skills')} style={{fontSize : `${innerWidth > 400 ? '23px' : '15px'}`}}>Skills</h1>
         <h1 onClick={() => handleClick('.slider')} style={{fontSize : `${innerWidth > 400 ? '23px' : '15px'}`}}>Projects</h1>
-        <h1 onClick={() => handleClick('.Skills')} style={{fontSize : `${innerWidth > 400 ? '23px' : '15px'}`}}>Contact me</h1>
+        <h1 onClick={() => handleClick('.contact')} style={{fontSize : `${innerWidth > 400 ? '23px' : '15px'}`}}>Contact me</h1>
       </div>
     </div>
   )

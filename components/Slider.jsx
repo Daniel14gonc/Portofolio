@@ -8,6 +8,7 @@ import Memory from '../assets/images/Memoria.jpg'
 import HCI from '../assets/images/HCI.jpg'
 import Batman from '../assets/images/Batman.jpg'
 import Streaming from '../assets/images/Streaming.jpg'
+import Instagram from '../assets/images/Instagram.jpg'
 
 const Slider = () => {
 
@@ -27,9 +28,16 @@ const Slider = () => {
     },
     {
       title: 'Louvre Pixel Perfect',
-      description: "I made a Pixel Perfect copy of Louvre Museum's website. This was a challenging project because of the position of elements and the animations involved. Furthermore, I made it with Server Side Rendering, without any framework like NextJS, just express and Hydrate. I uploaded the project to my own AWS virtual machine and used NGINX, a proxy pass tool.",
+      description: "I made a Pixel Perfect copy of Louvre Museum's website. This was a challenging project because of the position of elements and the animations involved. Furthermore, I made it with Server Side Rendering, without any framework like NextJS, just express and Hydrate. I uploaded the project to my own AWS virtual machine and used NGINX, a reverse proxy tool.",
       image: Louvre,
       link: 'https://proyecto.danielgcarrillo.xyz'
+    },
+    
+    {
+      title: 'Instagram Redesign',
+      description: "As my first UX project, I redesigned Instagram. I identified different issues with the app through user research. The redesign was intended to simplify and improve user experience.",
+      image: Instagram,
+      link: 'https://xd.adobe.com/view/63420294-e4f1-4262-89b6-d5cc33b5f721-3611/'
     },
     {
       title: 'Memory Game',
@@ -39,7 +47,7 @@ const Slider = () => {
     },
     {
       title: 'Order managment system',
-      description: "As I told you, I am an UX designer too. I created an order management system for a goods provider who needed to modernize its system. I did research of the needs of the users and made an app on top of that.",
+      description: "I created an order management system for a goods provider who needed to modernize its system. I did research of the needs of the users and made an app on top of that.",
       image: HCI,
       link: 'https://www.figma.com/proto/zbUBNUvfknV0uCFLiGNs4W/HCI?page-id=0%3A1&node-id=5%3A9&viewport=397%2C221%2C0.16&scaling=min-zoom&starting-point-node-id=31%3A150'
     },

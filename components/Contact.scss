@@ -1,0 +1,102 @@
+.contact {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 2;
+    cursor: pointer;
+    z-index: 1010;
+}
+
+.socials {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+}
+
+.email-me {
+    font-family: Sudo;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #025373;
+    margin-top: 80px;
+}
+
+.email {
+    font-family: Sporting;
+    font-size: 30px;
+    color: #025373;
+    transition: 1s;
+}
+
+.email:hover {
+    color: #021F59;
+    transform: scale(1.1);
+}
+
+.socials > div {
+    color: #021F59;
+    text-decoration: underline;
+    z-index: 1010;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 18px;
+}
+
+.socials > a {
+    color: #025373;
+    text-decoration: underline;
+    z-index: 1010;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 18px;
+}
+
+.socials > a:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 500px) {
+    .email-me {
+        font-family: Sudo;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #025373;
+    }
+
+    .email {
+        font-family: Sporting;
+        font-size: 18px;
+        color: #025373;
+        transition: 1s;
+    }
+
+    .socials {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 250px;
+    }
+
+    .socials > a {
+        color: #025373;
+        text-decoration: underline;
+        z-index: 1010;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 16px;
+    }
+}
