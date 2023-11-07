@@ -24,7 +24,7 @@ const Slider = () => {
       title: 'CommunicAID', 
       description: 'I built this tool for the Accessibility + AI Challenge Hackathon from Microsfot Latin America. The aim of the project  is to shorten the gap for people with hearing disabilities who want to study, increasing inclusivity.',
       image: Communic,
-      link: 'https://communic-aid.com'
+      link: 'https://devpost.com/software/communicaid-2i9c8l?ref_content=my-projects-tab&ref_feature=my_projects'
     },
     {
       title: 'Louvre Pixel Perfect',
@@ -40,12 +40,6 @@ const Slider = () => {
       link: 'https://xd.adobe.com/view/63420294-e4f1-4262-89b6-d5cc33b5f721-3611/'
     },
     {
-      title: 'Memory Game',
-      description: "I like watching anime in my free time. I have recently discovered it but it is really cool. That is why I made a memory game with Demon Slayer desing.",
-      image: Memory,
-      link: 'https://juanelcaballo.club/20293/memoria/'
-    },
-    {
       title: 'Order managment system',
       description: "I created an order management system for a goods provider who needed to modernize its system. I did research of the needs of the users and made an app on top of that.",
       image: HCI,
@@ -56,13 +50,7 @@ const Slider = () => {
       description: "I drew Batman CSS only with a single div. It was challenging because I did not know how to use CSS attributes and classes, but it ended up being pretty cool.",
       image: Batman,
       link: 'https://codepen.io/Daniel14_gc/pen/dyZNZWa'
-    },
-    {
-      title: 'Streaming App',
-      description: "I built a Streaming App oriented to data managment and persistence. I built a backend with an API made in Flask with python and used PostgreSQL to make a relational model to manage data.",
-      image: Streaming,
-      link: 'https://streaming.danielgcarrillo.xyz'
-    },
+    }
   ]
 
   // const width = document.querySelector('.dynamic').offsetWidth
